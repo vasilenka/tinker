@@ -1,0 +1,17 @@
+@import 'src/tokens';
+
+.root {
+  padding-top: $space-l;
+}
+
+.narrow {
+  composes: container-narrow from global;
+}
+
+.full {
+  composes: container from global;
+}
+
+.bleed {
+  composes: container-fluid from global;
+}

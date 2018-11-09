@@ -1,0 +1,50 @@
+@import 'src/tokens';
+
+.root {
+  margin: $space-stack-ll;
+  display: flex;
+  align-items: center;
+}
+
+.narrow {
+  composes: container-narrow from global;
+}
+
+.full {
+  composes: container from global;
+}
+
+.bleed {
+  composes: container-fluid from global;
+}
+
+.iconContainer {
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  // background: $brand-primary-100;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: $space-inline-l;
+}
+
+.icon {
+  font-size: 48px;
+  line-height: 48px;
+  // color: $brand-secondary-100;
+  color: $brand-tertiary-100;
+}
+
+.titleContainer {
+}
+
+.title {
+  color: $brand-primary-100;
+}
+
+.subtitle {
+  color: $dark-alpha-70;
+  font-weight: 400;
+}

@@ -1,0 +1,97 @@
+@import 'src/tokens';
+
+.root {
+  padding: $space-squish-m;
+  font-size: 18px;
+  font-weight: $medium;
+  line-height: 18px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid transparent;
+  letter-spacing: -0.4px;
+  cursor: pointer;
+}
+
+.primary {
+  composes: root;
+  color: $light-alpha-100;
+  background-color: $brand-primary-200;
+  transition: all 0.4s ease;
+
+  &:hover {
+    transition: all 0.24s ease;
+    background-color: $brand-primary-300;
+  }
+}
+
+.secondary {
+  composes: root;
+  color: $light-alpha-100;
+  background-color: $brand-secondary-200;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: $brand-secondary-300;
+    transition: all 0.24s ease;
+  }
+}
+
+.tertiary {
+  composes: root;
+  color: $brand-primary-100;
+  background-color: $brand-secondary-100;
+  background-image: linear-gradient(
+    180deg,
+    transparent 95%,
+    $brand-secondary-100 0
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: all 0.4s ease;
+  &:hover {
+    transition: all 0.24s ease;
+    box-shadow: 0px 4px 4px $brand-secondary-20;
+    outline: none;
+  }
+}
+
+.primary_full {
+  composes: primary;
+  width: 100%;
+  text-align: center;
+}
+
+.large {
+  padding: $space-squish-ml;
+}
+
+.small {
+  padding: $space-squish-s;
+}
+
+.outline {
+  composes: root;
+  color: $brand-primary-80;
+  border-color: $brand-primary-80;
+  background-image: linear-gradient(
+    180deg,
+    transparent 95%,
+    $brand-primary-100 0
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: all 0.4s ease;
+  background-color: transparent;
+
+  &:hover {
+    transition: all 0.24s ease;
+    color: $brand-primary-100;
+    border-color: $brand-primary-100;
+    background-size: 100% 100%;
+  }
+}
+
+.outline_full {
+  composes: outline;
+  width: 100%;
+}

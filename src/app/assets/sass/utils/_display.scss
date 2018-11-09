@@ -1,0 +1,15 @@
+:global {
+  .__inline {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  .__stack {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .__hide {
+    display: none;
+  }
+}
