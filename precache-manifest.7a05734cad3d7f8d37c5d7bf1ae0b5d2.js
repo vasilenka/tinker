@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/tinker/static/media/AirbnbCereal-Light.1f9c7d32.ttf"
   },
   {
-    "revision": "54838944da1443c70c89d186499c68aa",
+    "revision": "62a4ad5e8086c2322dcd1f0d5babe8e0",
     "url": "/tinker/index.html"
   }
 ];
