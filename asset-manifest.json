@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.5d0fe516.chunk.css",
-  "main.js": "/static/js/main.cce03a63.chunk.js",
-  "main.js.map": "/static/js/main.cce03a63.chunk.js.map",
-  "static/js/1.9088fe34.chunk.js": "/static/js/1.9088fe34.chunk.js",
-  "static/js/1.9088fe34.chunk.js.map": "/static/js/1.9088fe34.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/stylesheet.css": "/static/media/AirbnbCereal-Light.1f9c7d32.ttf",
-  "static/css/main.5d0fe516.chunk.css.map": "/static/css/main.5d0fe516.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.b1fbfb74d81d9401ebbaf77fb5499e89.js": "/precache-manifest.b1fbfb74d81d9401ebbaf77fb5499e89.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "vasilenka.github.io/tinker/static/css/main.67e294e3.chunk.css",
+  "main.js": "vasilenka.github.io/tinker/static/js/main.efdadfd6.chunk.js",
+  "main.js.map": "vasilenka.github.io/tinker/static/js/main.efdadfd6.chunk.js.map",
+  "static/js/1.9088fe34.chunk.js": "vasilenka.github.io/tinker/static/js/1.9088fe34.chunk.js",
+  "static/js/1.9088fe34.chunk.js.map": "vasilenka.github.io/tinker/static/js/1.9088fe34.chunk.js.map",
+  "runtime~main.js": "vasilenka.github.io/tinker/static/js/runtime~main.0c506f53.js",
+  "runtime~main.js.map": "vasilenka.github.io/tinker/static/js/runtime~main.0c506f53.js.map",
+  "static/media/stylesheet.css": "vasilenka.github.io/tinker/static/media/AirbnbCereal-Light.1f9c7d32.ttf",
+  "static/css/main.67e294e3.chunk.css.map": "vasilenka.github.io/tinker/static/css/main.67e294e3.chunk.css.map",
+  "index.html": "vasilenka.github.io/tinker/index.html",
+  "precache-manifest.939a27e9ff66e10ec6311a276d60ad97.js": "vasilenka.github.io/tinker/precache-manifest.939a27e9ff66e10ec6311a276d60ad97.js",
+  "service-worker.js": "vasilenka.github.io/tinker/service-worker.js"
 }
