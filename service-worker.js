@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "vasilenka.github.io/tinker/precache-manifest.939a27e9ff66e10ec6311a276d60ad97.js"
+  "/tinker/precache-manifest.0e447c89f209dc8e11dc74e2a25a659a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("vasilenka.github.io/tinker/index.html", {
+workbox.routing.registerNavigationRoute("/tinker/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
