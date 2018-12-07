@@ -1,4 +1,4 @@
-@import 'src/tokens';
+@import 'invoker-tokens/index.scss';
 
 .root {
   background: $light-alpha-100;
@@ -10,4 +10,8 @@
 
 .greet {
   color: $brand-primary-200;
+}
+
+.testContainer {
+  background: $brand-secondary-100;
 }

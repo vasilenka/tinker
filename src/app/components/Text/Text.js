@@ -39,12 +39,12 @@ const Text = ({
     <Component
       {...restProps}
       className={classnames({
-        [className]: className,
         [styles.root]: true,
         [styles[size]]: size,
         [styles.raw]: raw,
         [styles.bullet]: bullet,
-        [styles.baseline]: baseline
+        [styles.baseline]: baseline,
+        [className]: className
       })}
     >
       <span
@@ -70,7 +70,7 @@ Text.displayName = 'Text';
 Text.defaultProps = {
   baseline: true,
   bullet: false,
-  size: 'regular'
+  size: 'medium'
 };
 
 export default withTextProps(Text);

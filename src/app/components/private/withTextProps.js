@@ -13,15 +13,15 @@ export const sizes = [
   'display3',
 
   'small',
-  'normal',
+  'medium',
   'large',
 
   'message',
-  'label',
+  'labelSmall',
+  'labelMedium',
 
-  'captionLarge',
-  'captionNormal',
-  'captionSmall',
+  'caption',
+  'captionBold',
 
   'heading1',
   'heading2',

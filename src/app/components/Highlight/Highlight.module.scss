@@ -1,9 +1,10 @@
-@import 'src/tokens';
+@import 'invoker-tokens/index.scss';
 
 .root {
-  background-color: $brand-secondary-100;
+  font-family: inherit;
+  background-color: $brand-primary-40;
   border-radius: $radius-xs;
   display: inline-block;
   margin: -2px;
-  padding: $space-inset-s;
+  padding: $space-inset-xs;
 }

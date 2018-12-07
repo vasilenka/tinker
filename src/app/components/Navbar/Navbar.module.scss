@@ -1,0 +1,35 @@
+@import 'invoker-tokens/index.scss';
+
+.root {
+  background: $brand-primary-200;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: $space-vertical-m;
+  composes: container-bleed from global;
+  z-index: 99999;
+}
+
+.container {
+  composes: container-narrow from global;
+  max-width: 560px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  height: 16px;
+  margin: $space-inline-m;
+  opacity: 0.44;
+}
+
+.name {
+  color: $light-alpha-100;
+  font-weight: $bold;
+  margin: 0;
+}

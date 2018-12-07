@@ -1,0 +1,35 @@
+@import 'invoker-tokens/index.scss';
+
+.root {
+  position: relative;
+  width: 100%;
+}
+
+.field {
+  width: 100%;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+}
+
+.stack {
+  display: block;
+}
+
+.item {
+  cursor: pointer;
+  color: $dark-alpha-70;
+  padding: $space-sm $space-ml;
+  transition: all 0.36s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $dark-alpha-10;
+    transition: all 0.28s ease;
+  }
+}

@@ -1,0 +1,14 @@
+@import 'invoker-tokens/index.scss';
+
+// Checkbox
+.root {
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  padding: $space-vertical-sm;
+}
+
+.root input[type='checkbox'] {
+  opacity: 0;
+  cursor: pointer;
+}

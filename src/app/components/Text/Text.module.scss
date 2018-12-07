@@ -1,130 +1,140 @@
-@import 'src/tokens';
+@import 'invoker-tokens/index.scss';
 
 .root {
-  // color: $dark-alpha-80;
 }
 
 .display {
-  font-family: $font-primary;
 }
 
 // Display Text
 .display1 {
-  composes: display;
+  // composes: display;
   font-size: $display-1;
   line-height: $line-reset;
   letter-spacing: -1.44px;
+  font-weight: 800;
 }
 .display2 {
-  composes: display;
+  // composes: display;
   font-size: $display-2;
   line-height: $line-reset;
   letter-spacing: -1.628px;
+  font-weight: 800;
 }
 .display3 {
-  composes: display;
+  // composes: display;
   font-size: $display-3;
   line-height: $line-reset;
   font-weight: $bold;
   letter-spacing: -1.44px;
+  font-weight: 800;
 }
 
 // Heading Text
 .heading1 {
-  font-size: $heading-1;
+  color: $dark-alpha-80;
   font-family: $font-primary;
-  line-height: 56px;
+  font-size: $heading-1;
+  line-height: 52px;
   letter-spacing: -1.44px;
+  font-weight: $bold;
 }
 .heading2 {
-  font-size: $heading-2;
+  color: $dark-alpha-80;
   font-family: $font-primary;
-  line-height: 40px;
+  font-size: $heading-2;
+  line-height: 36px;
   letter-spacing: -1.2px;
+  font-weight: $bold;
 }
 .heading3 {
-  font-size: $heading-3;
+  color: $dark-alpha-80;
   font-family: $font-primary;
-  line-height: 32px;
+  font-size: $heading-3;
+  line-height: 30px;
   letter-spacing: -0.8px;
+  font-weight: $bold;
 }
 .heading4 {
-  font-size: $heading-4;
+  color: $dark-alpha-80;
   font-family: $font-primary;
-  line-height: 24px;
+  font-size: $heading-4;
+  line-height: 26px;
   letter-spacing: -0.8px;
+  font-weight: $medium;
 }
 .heading5 {
-  font-size: $heading-5;
+  color: $dark-alpha-80;
   font-family: $font-primary;
-  line-height: 16px;
+  font-size: $heading-5;
+  line-height: 22px;
   letter-spacing: -0.24px;
+  font-weight: $medium;
+}
+.heading6 {
+  color: $dark-alpha-80;
+  font-family: $font-primary;
+  font-size: $heading-6;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  font-weight: $medium;
 }
 
 // Body Text
 .large {
   font-family: $font-primary;
   font-size: $body-3;
-  line-height: 32px;
+  line-height: 26px;
   font-weight: $regular;
 }
-.normal {
+.medium {
   font-family: $font-primary;
   font-size: $body-2;
-  line-height: 24px;
+  line-height: 22px;
   font-weight: $regular;
 }
 .small {
   font-family: $font-primary;
   font-size: $body-1;
-  line-height: 20px;
+  line-height: 18px;
   font-weight: $regular;
 }
 
-.captionLarge {
+// Captions
+.captionBold {
+  display: inline-block;
+  font-family: $font-primary;
   font-size: $caption-1;
   font-weight: $medium;
   text-transform: uppercase;
-  font-family: $font-primary;
+  line-height: 16px;
 }
-.captionNormal {
-  font-size: $caption-2;
+.caption {
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: $caption-1;
   font-weight: $regular;
-  font-family: $font-primary;
-}
-.captionSmall {
-  font-size: $caption-3;
-  text-transform: uppercase;
-  font-weight: $medium;
-  font-family: $font-primary;
-  letter-spacing: 0.8px;
+  line-height: 16px;
 }
 
-.hero {
-  font-size: $display-1;
-  line-height: $line-cozy;
-  color: $dark-alpha-80;
-  font-weight: $bold;
-  font-family: $font-primary;
-}
-
-.headline {
-  font-size: $display-3;
-  font-weight: $bold;
-  font-family: $font-primary;
-}
-
-.heading {
-  font-size: $heading-2;
-  line-height: 40px;
-  font-weight: $bold;
-  font-family: $font-primary;
-}
-
+// Label
 .label {
   font-family: $font-primary;
+  color: $dark-alpha-70;
+  font-weight: 500;
+  margin: $space-stack-s;
+}
+
+.labelSmall {
+  composes: label;
+  font-size: $heading-6;
+  line-height: 18px;
+}
+
+.labelMedium {
+  composes: label;
   font-size: $heading-5;
-  font-weight: $medium;
+  line-height: 22px;
 }
 
 .message {
@@ -139,23 +149,24 @@
 }
 
 .link {
-  font-weight: $bold;
-  color: $brand-primary-100;
+  font-family: $font-primary;
+  font-weight: inherit;
+  color: $brand-primary-200;
   text-decoration: none;
   background-image: linear-gradient(
     180deg,
-    $brand-primary-100 30%,
-    $brand-primary-80 30%
+    $brand-primary-200 30%,
+    $brand-primary-200 30%
   );
-  background-size: 0% 2px;
+  background-size: 0% 1.5px;
   background-repeat: no-repeat;
   background-position: 0 100%;
-  transition: all 0.3s ease;
+  transition: all 0.12s;
   cursor: pointer;
 
   &:hover {
-    background-size: 100% 2px;
+    background-size: 100% 1.5px;
     text-shadow: textshadow($light-alpha-100);
-    color: $brand-primary-200;
+    color: $brand-primary-300;
   }
 }

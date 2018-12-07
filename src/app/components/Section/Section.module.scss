@@ -1,4 +1,4 @@
-@import 'src/tokens';
+@import 'invoker-tokens/index.scss';
 
 .root {
   padding-top: $space-l;
@@ -13,5 +13,5 @@
 }
 
 .bleed {
-  composes: container-fluid from global;
+  composes: container-bleed from global;
 }

@@ -2,11 +2,12 @@ import './app/assets/fonts/fonts';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.scss';
+import 'invoker-layout/grid.module.scss';
+
 import App from './app/App';
 import * as serviceWorker from './serviceWorker';
-
-import './app/assets/sass/grid.module.scss';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

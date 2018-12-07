@@ -1,0 +1,43 @@
+@import 'invoker-tokens/index.scss';
+
+.root {
+  width: 100%;
+  border: 1px solid $dark-alpha-20;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.3s;
+  box-sizing: border-box;
+
+  &:focus,
+  &:active {
+    border-color: $brand-primary-200;
+    transition: all 0.28s;
+  }
+}
+
+.stack {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.error {
+  border-color: $brand-secondary-200;
+  background: $brand-secondary-10;
+}
+
+.small {
+  composes: root;
+  padding: 8px 11px;
+  font-size: $heading-6;
+  line-height: 18px;
+}
+
+.normal {
+  composes: root;
+  padding: 11px;
+  font-size: $heading-5;
+  line-height: 24px;
+}

@@ -1,0 +1,34 @@
+@import 'invoker-tokens/index.scss';
+
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.checkbox {
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.box {
+  display: block;
+  margin-right: 8px;
+}
+
+.label {
+  color: $dark-alpha-80;
+  margin-right: 24px;
+  display: inline-block;
+  text-transform: capitalize;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.secondaryLabel {
+  margin-right: 48px;
+  color: $dark-alpha-70;
+}
