@@ -21,6 +21,11 @@
   max-width: 560px;
 }
 
+.greet {
+  color: $brand-primary-200 !important;
+  font-weight: 800 !important;
+}
+
 .testContainer {
   background: $brand-secondary-100;
 }

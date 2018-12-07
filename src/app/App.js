@@ -9,8 +9,8 @@ class App extends Component {
   render() {
     return (
       <div className={classnames(styles.root)}>
-        <img className={styles.logo} src={tinker} alt="" />
-        <Text heading1 component="h1">
+        <img className={styles.logo} src={tinker} alt="tinker logo" />
+        <Text heading1 className={styles.greet} component="h1">
           tinker.
         </Text>
       </div>
