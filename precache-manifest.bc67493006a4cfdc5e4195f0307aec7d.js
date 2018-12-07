@@ -1,23 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "52d2cb71b40929e5263bcd113536133a",
-    "url": "/tinker/static/media/Sentinel-Bold.52d2cb71.otf"
+    "revision": "a83d81a7774d0a128047ef2294d66703",
+    "url": "/tinker/static/media/Sentinel-Semibold.a83d81a7.otf"
   },
   {
-    "revision": "025c2618bb9059b02784",
-    "url": "/tinker/static/css/main.fa46dd7b.chunk.css"
+    "revision": "c3b3150f7a5b7350230c",
+    "url": "/tinker/static/css/main.588cdf79.chunk.css"
   },
   {
     "revision": "a2f545d30dfa6ce81b53c5f8bab07d32",
     "url": "/tinker/static/media/Masbul-Light.a2f545d3.ttf"
   },
   {
-    "revision": "6f28f7998df496bd1260",
-    "url": "/tinker/static/js/1.6f28f799.chunk.js"
+    "revision": "0caff981d88ead3f57ef",
+    "url": "/tinker/static/js/1.0caff981.chunk.js"
   },
   {
     "revision": "2476e36cc7beb56f7a4f",
     "url": "/tinker/static/js/runtime~main.2476e36c.js"
+  },
+  {
+    "revision": "2cd327482a88bb70b0c0d52bf40cbca3",
+    "url": "/tinker/static/media/tink.2cd32748.png"
   },
   {
     "revision": "a1d65c5b1d1547a34e3e54f964d8f4cd",
@@ -44,12 +48,12 @@ self.__precacheManifest = [
     "url": "/tinker/static/media/Sentinel-MediumItalic.49e282b7.otf"
   },
   {
-    "revision": "a83d81a7774d0a128047ef2294d66703",
-    "url": "/tinker/static/media/Sentinel-Semibold.a83d81a7.otf"
+    "revision": "c3b3150f7a5b7350230c",
+    "url": "/tinker/static/js/main.c3b3150f.chunk.js"
   },
   {
-    "revision": "025c2618bb9059b02784",
-    "url": "/tinker/static/js/main.025c2618.chunk.js"
+    "revision": "52d2cb71b40929e5263bcd113536133a",
+    "url": "/tinker/static/media/Sentinel-Bold.52d2cb71.otf"
   },
   {
     "revision": "e999b6851f1cef1dae8690b5d87fc8f0",
@@ -88,11 +92,11 @@ self.__precacheManifest = [
     "url": "/tinker/static/media/Masbul-Book.c24df600.ttf"
   },
   {
-    "revision": "6f28f7998df496bd1260",
-    "url": "/tinker/static/css/1.38a990a8.chunk.css"
+    "revision": "0caff981d88ead3f57ef",
+    "url": "/tinker/static/css/1.1c351e7d.chunk.css"
   },
   {
-    "revision": "4019a0757c9c74db2d453f1aa4577eac",
+    "revision": "1c9c243eace22c61338dc576eec31516",
     "url": "/tinker/index.html"
   }
 ];
