@@ -4,24 +4,24 @@ self.__precacheManifest = [
     "url": "/tinker/static/media/Sentinel-Semibold.a83d81a7.otf"
   },
   {
-    "revision": "c3b3150f7a5b7350230c",
-    "url": "/tinker/static/css/main.588cdf79.chunk.css"
+    "revision": "ea7ce3ed13125ed82a2b",
+    "url": "/tinker/static/css/main.5226f0de.chunk.css"
   },
   {
     "revision": "a2f545d30dfa6ce81b53c5f8bab07d32",
     "url": "/tinker/static/media/Masbul-Light.a2f545d3.ttf"
   },
   {
-    "revision": "0caff981d88ead3f57ef",
-    "url": "/tinker/static/js/1.0caff981.chunk.js"
+    "revision": "c545afedeed7c4bdb95f",
+    "url": "/tinker/static/js/1.c545afed.chunk.js"
   },
   {
     "revision": "2476e36cc7beb56f7a4f",
     "url": "/tinker/static/js/runtime~main.2476e36c.js"
   },
   {
-    "revision": "2cd327482a88bb70b0c0d52bf40cbca3",
-    "url": "/tinker/static/media/tink.2cd32748.png"
+    "revision": "3806b7e8af6612b44ff57b7945f85b73",
+    "url": "/tinker/static/media/tink.3806b7e8.png"
   },
   {
     "revision": "a1d65c5b1d1547a34e3e54f964d8f4cd",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/tinker/static/media/Sentinel-MediumItalic.49e282b7.otf"
   },
   {
-    "revision": "c3b3150f7a5b7350230c",
-    "url": "/tinker/static/js/main.c3b3150f.chunk.js"
+    "revision": "ea7ce3ed13125ed82a2b",
+    "url": "/tinker/static/js/main.ea7ce3ed.chunk.js"
   },
   {
     "revision": "52d2cb71b40929e5263bcd113536133a",
@@ -92,11 +92,11 @@ self.__precacheManifest = [
     "url": "/tinker/static/media/Masbul-Book.c24df600.ttf"
   },
   {
-    "revision": "0caff981d88ead3f57ef",
+    "revision": "c545afedeed7c4bdb95f",
     "url": "/tinker/static/css/1.1c351e7d.chunk.css"
   },
   {
-    "revision": "1c9c243eace22c61338dc576eec31516",
+    "revision": "d1f2825dae5d53b286e27438676cb915",
     "url": "/tinker/index.html"
   }
 ];
