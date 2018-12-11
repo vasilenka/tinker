@@ -1,0 +1,28 @@
+// Mixins
+@import './mixins/text-shadow.scss';
+@import './mixins/link-animation.scss';
+@import './mixins/media-queries.scss';
+@import './mixins/text-crop.scss';
+@import './mixins/to-rem.scss';
+// @import './mixins/typography.scss';
+
+@function upperSize($number) {
+  @return $number * 1.618;
+}
+
+@function lowerSize($number) {
+  @return $number / 1.618;
+}
+
+@mixin clearfix {
+  &::before {
+    display: table;
+    content: '';
+  }
+
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}

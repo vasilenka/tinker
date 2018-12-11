@@ -1,26 +1,9 @@
-@import 'invoker-tokens/index.scss';
-@import 'invoker-base/index.scss';
+@import './app/assets/sass/tokens/index.scss';
+@import './app/assets/sass/base/index.scss';
 
-// *,
-// *::before,
-// *::after {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: inherit;
-//   text-decoration: none;
-// }
-
-// body {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-//   font-family: $font-primary;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   font-size: 16px;
-// }
-
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-// }
+body {
+  font-family: $font-primary;
+  font-size: rem(16px);
+  color: $dark-alpha-80;
+  background-color: $light-hex-100;
+}
