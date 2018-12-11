@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.scss';
-import 'invoker-layout/grid.module.scss';
+import './app/assets/sass/layout/grid.module.scss';
 
 import App from './app/App';
 import * as serviceWorker from './serviceWorker';

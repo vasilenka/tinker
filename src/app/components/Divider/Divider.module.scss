@@ -1,0 +1,23 @@
+@import 'src/tokens';
+
+.root {
+  height: 1px;
+  width: 100%;
+  background: $dark-alpha-10;
+}
+
+.small {
+  margin: $space-vertical-s;
+}
+
+.medium {
+  margin: $space-vertical-m;
+}
+
+.large {
+  margin: $space-vertical-l;
+}
+
+.extra {
+  margin: $space-vertical-ll;
+}
