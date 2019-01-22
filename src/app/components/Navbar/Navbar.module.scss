@@ -6,30 +6,40 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: $space-vertical-m;
+  padding: $space-vertical-sm;
   composes: container-bleed from global;
   z-index: 99999;
 }
 
 .container {
-  composes: container-narrow from global;
-  max-width: 560px;
+  composes: container-bleed from global;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
+  min-height: 36px;
   justify-content: flex-start;
+  margin: $space-horizontal-ml;
 }
 
 .logo {
-  height: 16px;
-  margin: $space-inline-m;
-  opacity: 0.44;
+  max-height: 20px;
+  margin: $space-inline-sm;
 }
 
 .name {
-  color: $light-alpha-100;
-  font-weight: $bold;
-  margin: 0;
+  color: $light-alpha-100 !important;
+}
+
+.github {
+  margin: $space-horizontal-ml;
+}
+
+.githubLink {
+  height: fit-content;
+  display: inherit;
 }

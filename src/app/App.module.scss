@@ -1,11 +1,11 @@
 @import 'src/tokens';
 
 .root {
-  background: $light-alpha-100;
+  background: $bg-dust-100;
   width: 100%;
 }
 
-.logo {
+.logoContainer {
   width: 128px;
   height: 128px;
   margin: $space-stack-ml;
@@ -15,8 +15,10 @@
 .container {
   composes: container-narrow from global;
   max-width: 720px;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 

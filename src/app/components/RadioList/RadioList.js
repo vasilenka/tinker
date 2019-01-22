@@ -1,63 +1,50 @@
 import styles from './RadioList.module.scss';
 import React, { Component } from 'react';
-// import classnames from 'classnames';
+import classnames from 'classnames';
 
-import Radio from './../Radio/Radio';
+import { RadioContext } from './../context/context';
 
 class RadioList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: this.props.selected
+      selected: this.props.selected,
+      onChange: this.onChange,
+      name: ''
     };
   }
 
-  handleClick = value => {
-    this.setState({
-      ...this.state,
-      value: value
+  onChange = value =>
+    this.setState({ ...this.state, selected: value }, () => {
+      this.props.onChange(this.state.selected);
     });
-  };
-
-  handleFocus = e => {
-    console.log('focusing!');
-  };
-
-  handleChange = e => {
-    console.log(e.target);
-  };
 
   render() {
     let {
-      header,
+      className,
       options,
       selected,
-      id,
       value,
       name,
       children,
-      className,
+      onChange,
       ...restProps
     } = this.props;
 
     return (
-      <div className={styles.root} {...restProps}>
-        {header}
-        {options &&
-          options.map((radio, index) => (
-            <Radio
-              key={index}
-              name={name}
-              id={`${name}${index}`}
-              label={radio}
-              value={radio}
-              checked={this.state.value}
-              onChange={this.handleChange}
-              onClick={this.handleClick}
-              onFocus={this.handleFocus}
-            />
-          ))}
-      </div>
+      <RadioContext.Provider
+        value={{ state: this.state, props: this.props }}
+        {...restProps}
+      >
+        <div
+          className={classnames({
+            [styles.root]: true,
+            [className]: className
+          })}
+        >
+          {children}
+        </div>
+      </RadioContext.Provider>
     );
   }
 }

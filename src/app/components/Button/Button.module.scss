@@ -5,7 +5,7 @@
   border-radius: 3px;
   outline: none;
   border-style: solid;
-  letter-spacing: -0.128px;
+  letter-spacing: normal;
   font-family: $font-primary;
 }
 
@@ -45,6 +45,56 @@
   line-height: 24px;
 }
 
+.primary {
+  composes: root;
+  border-color: $brand-primary-200;
+  color: $light-alpha-100;
+  background-color: $brand-primary-200;
+  transition: all 0.4s ease;
+
+  &:hover {
+    border-color: $brand-primary-300;
+    transition: all 0.24s ease;
+    background-color: $brand-primary-300;
+  }
+}
+
+.primaryAlt {
+  composes: root;
+  border-color: $brand-secondary-100;
+  color: $light-alpha-100;
+  background-color: $brand-secondary-100;
+  transition: all 0.4s ease;
+
+  &:hover {
+    border-color: $brand-secondary-200;
+    transition: all 0.24s ease;
+    background-color: $brand-secondary-200;
+  }
+}
+
+.primaryAltMedium {
+  composes: primaryAlt medium;
+}
+
+.primaryAltBold {
+  composes: primaryAlt bold;
+}
+
+.primaryMedium {
+  composes: primary medium;
+}
+
+.primaryBold {
+  composes: primary bold;
+}
+
+.primary_full {
+  composes: primary;
+  width: 100%;
+  text-align: center;
+}
+
 .secondary {
   composes: root;
   font-weight: $medium;
@@ -77,34 +127,6 @@
   }
 }
 
-.primary {
-  composes: root;
-  border-color: $brand-primary-200;
-  color: $light-alpha-100;
-  background-color: $brand-primary-200;
-  transition: all 0.4s ease;
-
-  &:hover {
-    border-color: $brand-primary-300;
-    transition: all 0.24s ease;
-    background-color: $brand-primary-300;
-  }
-}
-
-.primaryMedium {
-  composes: primary medium;
-}
-
-.primaryBold {
-  composes: primary bold;
-}
-
-.primary_full {
-  composes: primary;
-  width: 100%;
-  text-align: center;
-}
-
 .outline {
   composes: root;
   color: $brand-primary-80;
@@ -130,4 +152,10 @@
 .outline_full {
   composes: outline;
   width: 100%;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+  user-select: none;
 }

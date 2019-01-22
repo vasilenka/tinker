@@ -6,15 +6,15 @@ import Text from './../Text/Text';
 
 class FieldHint extends Component {
   render() {
-    const { children, error, ...restProps } = this.props;
+    const { tone, children, ...restProps } = this.props;
 
     return (
       <Text
-        heading6
+        small
         {...restProps}
         className={classnames({
           [styles.root]: true,
-          [styles.error]: error
+          [styles[tone]]: tone
         })}
       >
         {children}

@@ -1,6 +1,7 @@
 @import 'src/tokens';
 
 .root {
+  font-family: $font-primary;
 }
 
 .display {
@@ -32,48 +33,48 @@
 
 // Heading Text
 .heading1 {
+  composes: root;
   color: $dark-alpha-80;
-  font-family: $font-primary;
   font-size: $heading-1;
   line-height: 52px;
   letter-spacing: -1.44px;
-  font-weight: $extrabold;
+  font-weight: $bold;
 }
 .heading2 {
+  composes: root;
   color: $dark-alpha-80;
-  font-family: $font-primary;
   font-size: $heading-2;
   line-height: 36px;
   letter-spacing: -1.2px;
   font-weight: $bold;
 }
 .heading3 {
+  composes: root;
   color: $dark-alpha-80;
-  font-family: $font-primary;
   font-size: $heading-3;
   line-height: 30px;
   letter-spacing: -0.8px;
   font-weight: $bold;
 }
 .heading4 {
+  composes: root;
   color: $dark-alpha-80;
-  font-family: $font-primary;
   font-size: $heading-4;
   line-height: 26px;
   letter-spacing: -0.8px;
   font-weight: $medium;
 }
 .heading5 {
+  composes: root;
   color: $dark-alpha-80;
-  font-family: $font-primary;
   font-size: $heading-5;
   line-height: 22px;
   letter-spacing: -0.24px;
   font-weight: $medium;
 }
 .heading6 {
+  composes: root;
   color: $dark-alpha-80;
-  font-family: $font-primary;
   font-size: $heading-6;
   line-height: 18px;
   letter-spacing: -0.24px;
@@ -82,19 +83,19 @@
 
 // Body Text
 .large {
-  font-family: $font-primary;
+  composes: root;
   font-size: $body-3;
   line-height: 26px;
   font-weight: $regular;
 }
 .medium {
-  font-family: $font-primary;
+  composes: root;
   font-size: $body-2;
   line-height: 22px;
   font-weight: $regular;
 }
 .small {
-  font-family: $font-primary;
+  composes: root;
   font-size: $body-1;
   line-height: 18px;
   font-weight: $regular;
@@ -102,16 +103,16 @@
 
 // Captions
 .captionBold {
+  composes: root;
   display: inline-block;
-  font-family: $font-primary;
   font-size: $caption-1;
   font-weight: $medium;
   text-transform: uppercase;
   line-height: 16px;
 }
 .caption {
+  composes: root;
   display: inline-block;
-  font-family: $font-primary;
   font-size: $caption-1;
   font-weight: $regular;
   line-height: 16px;
@@ -119,7 +120,7 @@
 
 // Label
 .label {
-  font-family: $font-primary;
+  composes: root;
   color: $dark-alpha-70;
   font-weight: 500;
   margin: $space-stack-s;
@@ -150,23 +151,50 @@
 
 .link {
   font-family: $font-primary;
-  font-weight: inherit;
+  // width: fit-content;
   color: $brand-primary-200;
   text-decoration: none;
-  background-image: linear-gradient(
-    180deg,
-    $brand-primary-200 30%,
-    $brand-primary-200 30%
-  );
-  background-size: 0% 1.5px;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
+  // background-image: linear-gradient(
+  //   180deg,
+  //   $brand-primary-200 30%,
+  //   $brand-primary-200 30%
+  // );
+  // background-size: 0% 1.5px;
+  // background-repeat: no-repeat;
+  // background-position: 0 100%;
   transition: all 0.12s;
   cursor: pointer;
 
   &:hover {
-    background-size: 100% 1.5px;
-    text-shadow: textshadow($light-alpha-100);
+    // background-size: 100% 1.5px;
+    // text-shadow: textshadow($light-alpha-100);
+    text-decoration: underline;
     color: $brand-primary-300;
   }
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.breakWord {
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+.truncate {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: normal;
 }

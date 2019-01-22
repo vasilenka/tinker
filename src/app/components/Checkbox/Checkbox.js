@@ -1,14 +1,30 @@
 import styles from './Checkbox.module.scss';
 import React, { Component } from 'react';
 import classnames from 'classnames';
+import { CheckboxContext } from '../context/context';
 
 class Checkbox extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hover: false
+      hover: false,
+      isDisabled: this.props.isDisabled || false,
+      isChecked: this.props.isChecked || false,
+      name: this.props.name || '',
+      value: this.props.value || '',
+      id: this.props.id || '',
+      onChange: this.onChange,
+      onHover: this.onHover,
+      onLeave: this.onLeave
     };
   }
+
+  componentDidMount = () => {
+    let { setValue, isChecked } = this.props;
+    if (isChecked) {
+      setValue(this.props);
+    }
+  };
 
   onHover = e => {
     this.setState({
@@ -24,49 +40,46 @@ class Checkbox extends Component {
     });
   };
 
-  renderItems = () => {
-    let { hover } = this.state;
-    let { children } = this.props;
-
-    if (!children) {
-      return null;
-    }
-
-    return React.Children.map(children, (child, index) =>
-      React.isValidElement(child)
-        ? child.type.name === 'Checkmark'
-          ? React.cloneElement(child, {
-              onHover: hover
-            })
-          : React.cloneElement(child)
-        : null
+  onChange = isChecked => {
+    let { setValue } = this.props;
+    this.setState(
+      {
+        ...this.state,
+        isChecked
+      },
+      () => {
+        if (setValue) {
+          setValue(this.state);
+        }
+      }
     );
   };
 
   render() {
     let {
-      position,
       name,
       id,
       value,
       isChecked,
+      isDisabled,
       children,
       className,
+      setValue,
       ...restProps
     } = this.props;
 
     return (
-      <label
-        {...restProps}
-        className={classnames({
-          [styles.root]: true,
-          [className]: className
-        })}
-        onMouseEnter={this.onHover}
-        onMouseLeave={this.onLeave}
-      >
-        {this.renderItems()}
-      </label>
+      <CheckboxContext.Provider value={this.state}>
+        <div
+          {...restProps}
+          className={classnames({
+            [styles.root]: true,
+            [className]: className
+          })}
+        >
+          {children}
+        </div>
+      </CheckboxContext.Provider>
     );
   }
 }

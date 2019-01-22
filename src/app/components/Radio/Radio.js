@@ -13,17 +13,17 @@ class Radio extends Component {
     };
   }
 
-  // handleFocus = () => {
-  //   this.setState({
-  //     ...this.state,
-  //     focus: true
-  //   })
-  // }
-
-  handleBlur = () => {
+  onBlur = () => {
     this.setState({
       ...this.state,
       focus: false
+    });
+  };
+
+  onChange = e => {
+    this.setState({
+      ...this.state,
+      value: e.target.value
     });
   };
 
@@ -31,16 +31,16 @@ class Radio extends Component {
     let {
       id,
       name,
+      className,
       checked,
       label,
       onChange,
       onClick,
       onFocus,
-      className,
       ...restProps
     } = this.props;
     return (
-      <div {...restProps} className={classnames(styles.root, className)}>
+      <div className={classnames(styles.root, className)} {...restProps}>
         <input
           className={classnames({
             [styles.input]: true,
@@ -50,15 +50,16 @@ class Radio extends Component {
           name={name}
           type="radio"
           checked={checked === this.state.value}
-          onChange={onChange}
+          onChange={this.onChange}
         />
         <label
           className={classnames({
             [styles.label]: true
           })}
-          onClick={() => onClick(this.state.value)}
+          onClick={() => console.log(this.state.value)}
           onFocus={onFocus}
-          onBlur={this.handleBlur}
+          onBlur={this.onBlur}
+          htmlFor={id}
         >
           <Text className={styles.text} heading5>
             {label}
